@@ -23,11 +23,11 @@ pip install -r requirements.txt
 * AVT Dataset: please go to "./datasets/README.md" for the details about preparing preprocessed AVT dataset. The preprocessed dataset will be exposed later.
 
 ## Train
-* Run the following code to train ResTR on the Synapse Dataset:
+* Run the following code to train DB-TransCNN on the Synapse Dataset:
 ```bash
 python train.py --dataset Synapse --train_path <your path to Synapse train dataset> --model_name DB-TransCNN --max_epochs 150 --batch_size 4 --base_lr 0.01 
 ```
-* Run the following code to train ResTR on the AVT Dataset:
+* Run the following code to train DB-TransCNN on the AVT Dataset:
 ```bash
 python train.py --dataset AVT --train_path <your path to AVT train dataset> --model_name DB-TransCNN --max_epochs 150 --batch_size 4 --base_lr 0.01 
 ```
