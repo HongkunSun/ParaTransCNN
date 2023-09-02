@@ -18,7 +18,6 @@
 ## Aortic Vessel Tree(AVT) Data
 1. Access to the aortic vessel tree dataset:
    1. Use the [AVT data website](https://figshare.com/articles/dataset/Aortic_Vessel_Tree_AVT_CTA_Datasets_and_Segmentations/14806362) and download the dataset(KiTS,Rider,Dongyang). First, the data is resampled to 1mm x 1mm x Z, converte them to numpy and clip to [-190, 1668], and normalize to [0,1] . Select 2D slices with masks from the 3D volume as the training cases while keeping the 3D volume in h5 format for testing cases.
-   2. You can also send an Email directly to sunhongkun888 AT 163.com to request the preprocessed data for reproduction.
 2. The directory structure of the whole project is as follows:
 ```bash
 └── data
