@@ -2,7 +2,7 @@
 This repo holds code for [DB-TransCNN:Dual-branch TransCNN Encoder
 for Medical Image Segmentation](arXiv url)
 * Overview
-![image](/assets/R.png)
+![image](/assets/DB-TransCNN.png)
 
 ## Requirements
 We trained on NVIDIA RTX 3090, where python 3.9.10 and torch 1.12.1 on ubuntu 22.04.
@@ -62,11 +62,11 @@ python test.py --dataset AVT --volume_path <your path to AVT test dataset> --mod
 | DB-TransCNN                              | **83.86**  | 15.86     | 88.12        | 68.97              | **87.99**        | **83.84**        | **95.01**    | **69.79**     |**92.71**      | **84.43**  |
 
 ### Visualization on Synapse
-![image](assets/vision_btcv.png)
+![image](assets/BTCV.png)
 
 * AVT
 ### Visualization on AVT
-![image](assets/vision_avt.png)
+![image](assets/AVT.png)
 
 ## Reference
 * [TransUNet](https://arxiv.org/abs/2102.04306)
