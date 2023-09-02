@@ -7,7 +7,7 @@
 ```bash
 └── data
     └──Synapse
-        ├── test_vol_h5
+        ├── test_vol
         │   ├── case0001.npy.h5
         │   └── *.npy.h5
         └── train
@@ -22,7 +22,7 @@
 ```bash
 └── data
     └──AVT
-        ├── test_vol_h5
+        ├── test_vol
         │   ├── R15.h5
         │   ├── K19.h5
         │   └── *.h5
