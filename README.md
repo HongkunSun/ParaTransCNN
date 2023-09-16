@@ -1,6 +1,5 @@
-# DB-TransCNN
-This repo holds code for [DB-TransCNN:Dual-branch TransCNN Encoder
-for Medical Image Segmentation](arXiv url)
+# ParaTransCNN
+This repo holds code for [ParaTransCNN: Parallelized TransCNN Encoder for Medical Image Segmentation](arXiv url)
 * Overview
 ![image](/assets/DB-TransCNN.png)
 
@@ -23,22 +22,22 @@ pip install -r requirements.txt
 * AVT Dataset: please go to "./datasets/README.md" for the details about preparing preprocessed AVT dataset. The preprocessed dataset will be exposed later.
 
 ## Train
-* Run the following code to train DB-TransCNN on the Synapse Dataset:
+* Run the following code to train ParaTransCNN on the Synapse Dataset:
 ```bash
-python train.py --dataset Synapse --train_path <your path to Synapse train dataset> --model_name DB-TransCNN --max_epochs 150 --batch_size 4 --base_lr 0.01 
+python train.py --dataset Synapse --train_path <your path to Synapse train dataset> --model_name ParaTransCNN --max_epochs 150 --batch_size 4 --base_lr 0.01 
 ```
-* Run the following code to train DB-TransCNN on the AVT Dataset:
+* Run the following code to train ParaTransCNN on the AVT Dataset:
 ```bash
-python train.py --dataset AVT --train_path <your path to AVT train dataset> --model_name DB-TransCNN --max_epochs 150 --batch_size 4 --base_lr 0.01 
+python train.py --dataset AVT --train_path <your path to AVT train dataset> --model_name ParaTransCNN --max_epochs 150 --batch_size 4 --base_lr 0.01 
 ```
 ## Test
-* Run the following code to test the trained DB-TransCNN on the Synapse Dataset:
+* Run the following code to test the trained ParaTransCNN on the Synapse Dataset:
 ```bash
-python test.py --dataset Synapse --volume_path <your path to Synapse test dataset> --model_name DB-TransCNN --max_epochs 150 --batch_size 4 --base_lr 0.01 
+python test.py --dataset Synapse --volume_path <your path to Synapse test dataset> --model_name ParaTransCNN --max_epochs 150 --batch_size 4 --base_lr 0.01 
 ```
-* Run the following code to test the trained DB-TransCNN on the AVT Dataset:
+* Run the following code to test the trained ParaTransCNN on the AVT Dataset:
 ```bash
-python test.py --dataset AVT --volume_path <your path to AVT test dataset> --model_name DB-TransCNN --max_epochs 150 --batch_size 4 --base_lr 0.01 
+python test.py --dataset AVT --volume_path <your path to AVT test dataset> --model_name ParaTransCNN --max_epochs 150 --batch_size 4 --base_lr 0.01 
 ```
 ## Results
 * Synapse
@@ -59,7 +58,7 @@ python test.py --dataset AVT --volume_path <your path to AVT test dataset> --mod
 | MISSFormer                         | 81.96      | 18.20     | 86.99        | 68.65              | 85.21            | 82.00            | 94.41        | 65.67           | 91.92         | 80.81          |
 | TransCeption                       | 82.24      | 20.89     | 87.60        | 71.82              | 86.23            | 80.29            | **95.01**    | 65.27           | 91.68         | 80.02          |
 | DAE-Former                         | 82.43      | 17.46     | 88.96        | **72.30**          | 86.08            | 80.88            | 94.98        | 65.12           | 91.94         | 79.19          |
-| DB-TransCNN                              | **83.86**  | 15.86     | 88.12        | 68.97              | **87.99**        | **83.84**        | **95.01**    | **69.79**     |**92.71**      | **84.43**  |
+| ParaTransCNN                              | **83.86**  | 15.86     | 88.12        | 68.97              | **87.99**        | **83.84**        | **95.01**    | **69.79**     |**92.71**      | **84.43**  |
 
 ### Visualization on Synapse
 ![image](assets/BTCV.png)
