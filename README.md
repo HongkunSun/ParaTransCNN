@@ -1,7 +1,7 @@
 # ParaTransCNN
 This repo holds code for [ParaTransCNN: Parallelized TransCNN Encoder for Medical Image Segmentation](arXiv url)
 * Overview
-![image](/assets/DB-TransCNN.png)
+![image](/assets/ParaTransCNN.png)
 
 ## Requirements
 We trained on NVIDIA RTX 3090, where python 3.9.10 and torch 1.12.1 on ubuntu 22.04.
@@ -67,6 +67,9 @@ python test.py --dataset AVT --volume_path <your path to AVT test dataset> --mod
 ### Visualization on AVT
 ![image](assets/AVT.png)
 
+* ACDC
+### Visualization on ACDC
+![image](assets/ACDC.png)
 ## Reference
 * [TransUNet](https://arxiv.org/abs/2102.04306)
 * [ResNet](https://arxiv.org/abs/1512.03385)
