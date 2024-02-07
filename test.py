@@ -12,7 +12,7 @@ from datasets.dataset_synapse import Synapse_dataset
 from datasets.dataset_AVT import AVT_dataset
 from utils import test_single_volume_Synapse
 from utils import test_single_volume_AVT
-from model.DB_TransCNN import DB_TransCNN
+from model.ParaTransCNN import ParaTransCNN
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--volume_path', type=str,
@@ -118,7 +118,7 @@ if __name__ == "__main__":
     args.Dataset = dataset_config[dataset_name]['Dataset']
     args.list_dir = dataset_config[dataset_name]['list_dir']
 
-    net = DB_TransCNN(num_classes=args.num_classes).cuda()
+    net = ParaTransCNN(num_classes=args.num_classes).cuda()
     net.load_state_dict(torch.load(args.checkpoint_path))
 
     log_folder = args.checkpoint_path
