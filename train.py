@@ -5,7 +5,7 @@ import numpy as np
 import torch
 import torch.backends.cudnn as cudnn
 from trainer import trainer
-from model.DB_TransCNN import DB_TransCNN
+from model.ParaTransCNN import ParaTransCNN
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--train_path', type=str,
@@ -70,5 +70,5 @@ if __name__ == "__main__":
 
     if not os.path.exists(args.checkpoint_path):
         os.makedirs(args.checkpoint_path)
-    net = DB_TransCNN(num_classes=args.num_classes).cuda()
+    net = ParaTransCNN(num_classes=args.num_classes).cuda()
     trainer(args, net)
