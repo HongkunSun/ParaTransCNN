@@ -1,0 +1,20 @@
+[22:39:47.107] 18 test iterations per epoch
+[22:41:16.307] idx 0 case R15 mean_dice : 0.663449 mean_hd95 : 10.816654
+[22:41:22.510] idx 1 case K19 mean_dice : 0.794311 mean_hd95 : 5.916080
+[22:41:34.519] idx 2 case D15 mean_dice : 0.957174 mean_hd95 : 1.000000
+[22:42:45.111] idx 3 case K2 mean_dice : 0.895288 mean_hd95 : 5.830952
+[22:46:34.075] idx 4 case R7 (AD) mean_dice : 0.903314 mean_hd95 : 3.000000
+[22:46:44.764] idx 5 case D17 mean_dice : 0.919758 mean_hd95 : 1.000000
+[22:46:57.477] idx 6 case D13 mean_dice : 0.943086 mean_hd95 : 1.414214
+[22:48:58.119] idx 7 case R10 mean_dice : 0.874792 mean_hd95 : 13.453624
+[22:49:11.296] idx 8 case K12 mean_dice : 0.911359 mean_hd95 : 1.414214
+[22:49:30.619] idx 9 case D4 mean_dice : 0.938998 mean_hd95 : 1.000000
+[22:51:23.709] idx 10 case R1 (AD) mean_dice : 0.867255 mean_hd95 : 8.062258
+[22:52:04.414] idx 11 case K5 mean_dice : 0.908599 mean_hd95 : 2.000000
+[22:54:13.195] idx 12 case R6 (AAA) mean_dice : 0.934913 mean_hd95 : 2.236068
+[22:54:25.876] idx 13 case D12 mean_dice : 0.937563 mean_hd95 : 1.000000
+[22:55:08.916] idx 14 case R18 mean_dice : 0.736808 mean_hd95 : 8.944272
+[22:55:15.703] idx 15 case K20 mean_dice : 0.822883 mean_hd95 : 4.242641
+[22:55:25.143] idx 16 case D18 mean_dice : 0.937799 mean_hd95 : 1.000000
+[22:55:40.202] idx 17 case K9 mean_dice : 0.860363 mean_hd95 : 12.247449
+[22:55:40.286] Testing performance in best val model: mean_dice : 0.878206 mean_hd95 : 4.698801
