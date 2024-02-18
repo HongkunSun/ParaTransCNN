@@ -1,5 +1,5 @@
 # ParaTransCNN
-This repo holds code for [ParaTransCNN: Parallelized TransCNN Encoder for Medical Image Segmentation](arXiv url)
+This repo holds code for [ParaTransCNN: Parallelized TransCNN Encoder for Medical Image Segmentation](https://arxiv.org/abs/2401.15307)
 * Overview
 ![image](/assets/ParaTransCNN.png)
 
