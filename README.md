@@ -43,7 +43,7 @@ python test.py --dataset AVT --volume_path <your path to AVT test dataset> --mod
 * Synapse
 ### Evaluation metrics
 
-| <h3 align="left">**Methods** </h3> | <p>DSC</p> | <p>HD</p> | <p>Aorta</p> | <p>Gallbladder</p> | <p>Kidney(L)</p> | <p>Kidney(R)</p> | <p>Liver</p> | <p>Pancreas</p> | <p>Spleen</p> | <p>Stomach</p> |
+| <h3 align="left">**Methods** </h3> | <p>DSC(%)</p> | <p>HD(%)</p> | <p>Aorta</p> | <p>Gallbladder</p> | <p>Kidney(L)</p> | <p>Kidney(R)</p> | <p>Liver</p> | <p>Pancreas</p> | <p>Spleen</p> | <p>Stomach</p> |
 | ---------------------------------- |:----------:|:---------:|:------------:|:------------------:|:----------------:|:----------------:|:------------:|:---------------:|:-------------:|:--------------:|
 | DARR                               | 69.77      | -         | 74.74        | 53.77              | 72.31            | 73.24            | 94.08        | 54.18           | 89.90         | 45.96          |
 | R50 U-Net                          | 74.68      | 36.87     | 87.74        | 63.66              | 80.60            | 78.19            | 93.74        | 56.90           | 85.87         | 74.16          |
@@ -70,6 +70,24 @@ python test.py --dataset AVT --volume_path <your path to AVT test dataset> --mod
 * ACDC
 ### Visualization on ACDC
 ![image](assets/ACDC.png)
+
+* Kvasir_SEG
+### Evaluation metrics
+
+| <h3 align="left">**Methods** </h3> | <p>Dice</p> | <p>Jaccard</p> | <p>Precision</p> | <p>Recall </p> | 
+| ---------------------------------- |:----------:|:---------:|:------------:|:------------------:|
+| U-Net                              | 0.830530      | 0.748300     | 89.07        | 69.72              | 
+| UNet++                             | 0.795231      | 0.705255     | 55.92        | 63.91              | 
+| Att-UNet                           | 0.828564      | 0.748071     | **89.55**    | 68.88              | 
+| TransUnet                          | 0.869120      | 0.799637     | 87.23        | 63.13              |
+| SwinUnet                           | 0.854450      | 0.777262     | 85.47        | 66.53              |
+| TransDeepLab                       | 0.859171      | 0.779644     | 86.04        | 69.16              |
+| HiFormer                           | 0.859615      | 0.786705     | 86.21        | 65.69              |
+| MISSFormer                         | 0.715535      | 0.611769     | 86.99        | 68.65              | 
+| TransCeption                       | 0.773330      | 0.676522     | 87.60        | 71.82              |
+| DAE-Former                         | 0.779659      | 0.680100     | 88.96        | **72.30**          |
+| ParaTransCNN                       | **0.882230**  | 0.819137     | 88.12        | 68.97              |
+
 ## Reference
 * [TransUNet](https://arxiv.org/abs/2102.04306)
 * [ResNet](https://arxiv.org/abs/1512.03385)
