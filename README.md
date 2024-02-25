@@ -86,7 +86,10 @@ python test.py --dataset AVT --volume_path <your path to AVT test dataset> --mod
 | MISSFormer                         | 0.715535      | 0.611769     | 0.760764       | 0.765871              | 
 | TransCeption                       | 0.773330      | 0.676522     | 0.801368       | 0.813837              |
 | DAE-Former                         | 0.779659      | 0.680100     | 0.806010       | 0.807978              |
-| ParaTransCNN                       | **0.882230**  | **0.819137**     | **0.895940**       | **0.900321**              |
+| ParaTransCNN                       | **0.882230**  | **0.819137**     | **0.895940**       | **0.900321**  |
+
+### Visualization on Kvasir_SEG
+![image](assets/Kvasir_SEG.png)
 
 ## Reference
 * [TransUNet](https://arxiv.org/abs/2102.04306)
