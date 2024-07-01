@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 ## Dataset preparation
 * Synapse Dataset: please go to "./datasets/README.md" for the details about preparing preprocessed Synapse dataset or download the Synapse Dataset from [here](https://drive.google.com/drive/folders/1ACJEoTp-uqfFJ73qS3eUObQh52nGuzCd?usp=sharing).
-* AVT Dataset: please go to "./datasets/README.md" for the details about preparing preprocessed AVT dataset. The preprocessed dataset will be exposed later.
+* AVT Dataset: please go to "./datasets/README.md" for the details about preparing preprocessed AVT dataset. The preprocessed dataset is [here](https://pan.baidu.com/s/1Mfhmh0Xtn4C4VXL87dYZ2A?pwd=mrct).
 
 ## Train
 * Run the following code to train ParaTransCNN on the Synapse Dataset:
